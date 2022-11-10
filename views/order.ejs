@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/order.css" />
+
+<div class="order-wrapper">
+  <form action="/order/add-order" method="post">
+    <div class="form-body">
+      <div class="form-label">
+        <label for="Order">Enter Order</label>
+      </div>
+      <div class="form-input">
+        <input type="text" id="order-name" name="order_name" required />
+      </div>
+      <div class="form-label">
+        <label for="quantity">Quantity</label>
+      </div>
+      <div class="form-input">
+        <input
+          type="number"
+          id="order-quantity"
+          name="quantity"
+          required
+          min="1"
+        />
+      </div>
+      <div class="form-btn">
+        <button type="submit">Add Order</button>
+      </div>
+    </div>
+  </form>
+</div>
